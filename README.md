@@ -3,6 +3,14 @@ Code Challenge For Mobile Automation And API Automation
 
 ## Steps To Run Mobile Automation and API Automation (Python Project) In PyCharm IDE
 
+### **Prerequisites**
+- Make sure, the Python 3 is intsalled along with PyCharm IDE
+- Download Appium GUI Server OR Install Appium Using npm > `npm install -g appium`
+- Download Android Studio and Create a Android Virtual Device(AVD) AKA Emulator
+- Start Appium Server (Appium Server By Default Starts on Port 4723)
+- Launch an Emulator 
+- Drag And Drop The General Store APK on to the Emulator in order to Install it
+
 ### **Step 1: Take the pull from public GitHub Repository**
 
 Public GitHub Repository : `https://github.com/ansaritaha144/CodeChallenge.git`
