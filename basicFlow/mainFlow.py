@@ -18,7 +18,7 @@ driver.implicitly_wait(5)
 assert driver.find_element(MobileBy.ID, 'com.androidsample.generalstore:id/toolbar_title').is_displayed(), 'General Store App Is Not Displayed'
 driver.find_element(AppiumBy.ID, 'com.androidsample.generalstore:id/spinnerCountry').click()
 generalUtility.scrollToTextByAndroidUIAutomator('India', driver)
-driver.find_element(AppiumBy.ANDROID_UIAUTOMATOR, 'new UiSelector().textContains("India").instance(0)').click()
+driver.find_element(AppiumBy.ANDROID_UIAUTOMATOR, 'new UiSelector().textMatches("India").instance(0)').click()
 driver.find_element(AppiumBy.ID, 'com.androidsample.generalstore:id/nameField').send_keys('Taha Ansari')
 driver.hide_keyboard()
 driver.find_element(AppiumBy.ID, 'com.androidsample.generalstore:id/btnLetsShop').click()
@@ -58,5 +58,5 @@ driver.back()
 
 # GENERAL STORE HOME PAGE
 assert driver.find_element(MobileBy.ID, 'com.androidsample.generalstore:id/toolbar_title').is_displayed(), 'General Store App Is Not Displayed After Google Search'
-
+print('TEST PASSED !!!!')
 driver.quit()

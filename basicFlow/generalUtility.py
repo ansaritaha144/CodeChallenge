@@ -5,7 +5,7 @@ class generalUtility:
 
     @staticmethod
     def scrollToTextByAndroidUIAutomator(text, driver):
-        return driver.find_element(AppiumBy.ANDROID_UIAUTOMATOR, 'new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().textContains(\"' + text + '\").instance(0))').is_displayed()
+        return driver.find_element(AppiumBy.ANDROID_UIAUTOMATOR, 'new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().textMatches(\"' + text + '\").instance(0))').is_displayed()
 
 
     @staticmethod
